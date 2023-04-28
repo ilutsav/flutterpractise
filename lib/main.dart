@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            debugPrint('pressed');
+            debugPrint('pressed.');
           },
           child: const Icon(Icons.add),
         ),

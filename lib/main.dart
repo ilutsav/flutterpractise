@@ -21,6 +21,47 @@ class MyApp extends StatelessWidget {
           },
           child: const Icon(Icons.add),
         ),
+        body: Column(
+          children: [
+            ListTile(
+              title: const Text(
+                'Utsav',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
+              subtitle: const Text('how are you'),
+              leading: Container(
+                width: 42,
+                height: 42,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(48),
+                  color: Colors.black12,
+                ),
+              ),
+              trailing: const Icon(Icons.forward),
+            ),
+            const Divider(),
+            ListTile(
+              title: const Text(
+                'Utsav',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
+              subtitle: const Text('how are you'),
+              leading: Container(
+                width: 42,
+                height: 42,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(48),
+                  color: Colors.black12,
+                ),
+              ),
+              trailing: const Icon(Icons.forward),
+            ),
+            const Chip(
+              label: Text('hello'),
+              avatar: Icon(Icons.add),
+            ),
+          ],
+        ),
         bottomNavigationBar: NavigationBar(destinations: const [
           NavigationDestination(icon: Icon(Icons.home), label: ''),
           NavigationDestination(icon: Icon(Icons.search), label: '')

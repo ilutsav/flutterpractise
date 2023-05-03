@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # flutterpractise
 Small project covering basic widegts
->>>>>>> 55c048323a9ab17fa7f448015fc1ea009dd71bf5
+

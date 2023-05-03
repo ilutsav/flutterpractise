@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # practiseapp
 
 A new Flutter project.

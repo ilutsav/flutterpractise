@@ -67,7 +67,7 @@ class Chatbox extends StatelessWidget {
           ),
           trailing: const Icon(Icons.mic_off),
         ),
-        Divider(),
+        const Divider(),
       ],
     );
   }

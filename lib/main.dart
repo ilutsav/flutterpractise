@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('App Bar'),
+          title: const Text('App Barr'),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -73,6 +73,7 @@ class msgBox extends StatelessWidget {
         width: 42,
         height: 42,
         decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage("assets/IMG_5857.jpg")),
           borderRadius: BorderRadius.circular(48),
           color: Colors.black12,
         ),

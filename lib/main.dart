@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practiseapp/learn_flutter_page.dart';
+import 'package:practiseapp/pages/calculator_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,29 +34,45 @@ class MyApp extends StatelessWidget {
                 avatar: Icon(Icons.add),
               ),
               Center(
-                child: ElevatedButton(
-                  // Within the `FirstRoute` widget
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const HomePage()));
-                  },
-                  child: const Text('learn flutter'),
+                child: Column(
+                  children: [
+                    ElevatedButton(
+                      // Within the `FirstRoute` widget
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HomePage()));
+                      },
+                      child: const Text('learn flutter'),
+                    ),
+                    const SizedBox(height: 20),
+                    ElevatedButton(
+                      // Within the `FirstRoute` widget
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Calculator()));
+                      },
+                      child: const Text('Calculator'),
+                    ),
+                  ],
                 ),
               ),
             ],
           );
         }),
-        bottomNavigationBar: NavigationBar(destinations: const [
-          NavigationDestination(icon: Icon(Icons.home), label: ''),
-          NavigationDestination(icon: Icon(Icons.search), label: '')
-        ]),
+        // bottomNavigationBar: NavigationBar(destinations: const [
+        //   NavigationDestination(icon: Icon(Icons.home), label: ''),
+        //   NavigationDestination(icon: Icon(Icons.search), label: '')
+        // ]),
       ),
     );
   }
 }
 
+// ignore: camel_case_types
 class msgBox extends StatelessWidget {
   const msgBox({
     super.key,
@@ -73,7 +90,8 @@ class msgBox extends StatelessWidget {
         width: 42,
         height: 42,
         decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/IMG_5857.jpg")),
+          image:
+              const DecorationImage(image: AssetImage("assets/IMG_5857.jpg")),
           borderRadius: BorderRadius.circular(48),
           color: Colors.black12,
         ),

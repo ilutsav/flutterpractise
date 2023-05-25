@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             ListView.builder(
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               itemCount: 16,
               itemBuilder: (context, index) => Chatbox(
